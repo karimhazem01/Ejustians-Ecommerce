@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-justians Store</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="shortcut icon"
+      href="newlogo22.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/signin.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div class="top-img">
+      <header id="headerElement" class="flex">
+        <div class="logo">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span style="font-weight: bold">E-justians</span>
+          <img class="navbar-logo" src="newlogo22.2.png" alt="Logo">
+        </div>
+        
+        <div class="links">
+          <a style="position: relative" class="cart" href="./pages/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span> view cart
+        <button onclick="addToCart()"></button>
+          </a>
+          <a class="sign-in">
+            <button class="btnLogin-popup">Login</button>
+            <i class="fa-solid fa-right-to-bracket"></i></a>
+
+        </div>
+
+
+
+        <div class="wrapper">
+          <span class="icon-close"><i class="fa-solid fa-x"></i></span>
+  
+  
+          <div class="form-box login">
+              <h2>Login</h2>
+              <form action="#">
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                      <input type="email" required>
+                      <label>Email</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                      <input type="password" required>
+                      <label>Password</label>
+                  </div>
+                  <div class="remeber-forget">
+                      <label ><input type="checkbox">Remeber me</label>
+                      <a href="#">Forget Password?</a>
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  <div class="login-register">
+                      <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                  </div>
+              </form>
+          </div>
+          <div class="form-box register">
+              <h2>Register</h2>
+              <form action="#">
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" required>
+                      <label>Username</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                      <input type="email" required>
+                      <label>Email</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                      <input type="password" required>
+                      <label>Password</label>
+                  </div>
+                  <div class="remeber-forget">
+                      <label ><input type="checkbox">agree to terms and conditions</label>
+                      
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                  <div class="login-register">
+                      <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                  </div>
+              </form>
+          </div>
+  
+      </div>
+      </header>
+
+      <section class="content">
+        <p class="lifestyle">Lifestyle collection</p>
+        <p class="men">MEN</p>
+        <p class="sale">SALE UP TO <span>30% OFF</span></p>
+        <p class="free-shipping">Get Free Shipping on orders over $99.00</p>
+        <button>Shop Now</button>
+      </section>
+    </div>
+
+    <main class="">
+      <h1 class="recommended">
+        <i class="fa-solid fa-check"></i>
+        Recommended for you
+      </h1>
+
+      <section class="products flex">
+        <article class="product-card" data-id="1">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/1.png" alt="" srcset="" class="product-image"/>
+         
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Shorts</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$100</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="2">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/2.webp" alt="" srcset="" class="product-image"/>
+          
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">HandBag</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$200</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="3">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/3.webp" alt="" srcset="" class="product-image"/>
+         
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Bagpack</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$300</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="4">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/4.webp" alt="" srcset="" class="product-image"/>
+          
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Shoes</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$400</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="5">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/5.webp" alt="" srcset="" class="product-image" />
+          
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Cap</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$500</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="6">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/6.webp" alt="" srcset="" class="product-image" />
+          
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Smart Watch</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$600</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="7">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/7.webp" alt="" srcset="" class="product-image" />
+          
+
+          <div style="width: 266px" class="content">
+            <h1 class="title">Sun Glasses</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$700</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="8">
+          
+            <img width="266" src="../HTML-CSS-Ecommerce-website-main/images/8.png" alt="" srcset="" class="product-image" />
+          
+          <div style="width: 266px" class="content">
+            <h1 class="title">Stretch</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+              tempore dolor in, accusantium laudantium accusamus.
+            </p>
+
+            <div
+              class="flex"
+              style="justify-content: space-between; padding-bottom: 0.7rem"
+            >
+              <div class="price">$800</div>
+
+              <button class="add-to-cart flex" onclick="addToCart()">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Designed and developed by
+      <span> E-Justian Gang </span>
+      © 2025.
+    </footer>
+
+<script src="./js/main.js"></script>
+<script src="../HTML-CSS-Ecommerce-website-main/js/cart.js"> </script>
+  </body>
+</html>
